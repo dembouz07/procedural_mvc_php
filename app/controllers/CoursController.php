@@ -1,16 +1,16 @@
 <?php
 
 function Cours(){
-    require '../views/cours/index.php';
+    require '../app/views/cours/index.php';
 }
 
 function indexCours(){
     $cours = getAllCours();
-    require '../views/cours/show.php';
+    require '../app/views/cours/show.php';
 }
 
 function createCours(){
-    require '../views/cours/create.php';
+    require '../app/views/cours/create.php';
 }
 
 function storeCours(){
@@ -21,7 +21,7 @@ function storeCours(){
 
 function editCours(){
     $cours = getCoursById($_GET['id']);
-    require '../views/cours/edit.php';
+    require '../app/views/cours/edit.php';
 }
 
 function updateCourss(){

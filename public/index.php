@@ -2,12 +2,12 @@
 <a href="index.php?page=etudiant">Etudiant</a>
 <a href="index.php?page=cours">Cours</a>
 <?php
-    require '../models/database.php';
-    require '../models/Cours.php';
-    require '../models/Etudiant.php';
+    require '../app/models/database.php';
+    require '../app/models/Cours.php';
+    require '../app/models/Etudiant.php';
 
-    require '../controllers/CoursController.php';
-    require '../controllers/EtudiantController.php';
+    require '../app/controllers/CoursController.php';
+    require '../app/controllers/EtudiantController.php';
 
     if (isset($_GET['page'])) {
         if($_GET['page'] == 'etudiant'){
